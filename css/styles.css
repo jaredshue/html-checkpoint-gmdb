@@ -11,6 +11,38 @@ header {
     padding: 30px 2%;
 }
 
+/* Globals */
+.simple-textbox {
+    outline: none;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.simple-button {
+    border: 0px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.simple-button.info {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.simple-button.outline {
+    background-color: transparent;
+    border: 2px solid black;
+}
+
+.simple-button.outline.orange {
+    border-color: orange;
+    color: orange;
+}
+
+/* Navbar Section */
 .navbar {
     display: flex;
     justify-content: flex-start;
@@ -43,22 +75,21 @@ header {
     margin-left: 15px;
 }
 
-.navbar .navbar-links ul li a {
-    color: #DDDDDD;
+.navbar .navbar-links .navbar-link {
     text-decoration: none;
+    color: #DDDDDD;
 }
 
-.navbar .navbar-links ul li a:hover {
+.navbar .navbar-links .navbar-link:hover {
+    color: #FFFFFF;
+}
+
+.navbar .navbar-links .navbar-link.active {
     color: #FFFFFF;
 }
 
 .navbar .navbar-search {
     margin-left: auto;
-}
-
-.navbar .navbar-search input {
-    border: 0px;
-    padding: 10px;
 }
 
 .navbar .navbar-search .navbar-search-query-box {
@@ -69,16 +100,44 @@ header {
     /**/
 }
 
-.movies-section {
+/* Movies View */
+.movies-view {
     margin: 2%;
+    display: none;
 }
 
-.movies-section .movie-grid {
+.movies-view.active {
+    display: block;
+}
+
+.movies-view ul {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
 
-.movies-section ul li {
+.movies-view ul li {
     display: inline-block;
     margin-bottom: 10%;
+}
+
+.movies-view ul li a {
+    cursor: pointer;
+}
+
+/* Login Section */
+.login-view {
+    margin: 2%;
+    display: none;
+}
+
+.login-view.active {
+    display: block;
+}
+
+.login-view .login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 30px;
 }
