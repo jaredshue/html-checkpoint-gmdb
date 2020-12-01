@@ -1,1 +1,84 @@
-/**/
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+
+}
+
+header {
+    background-color: #485460;
+    padding: 30px 2%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.navbar .navbar-logo {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.navbar .navbar-logo a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.navbar .navbar-links {
+    font-size: 25px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+.navbar .navbar-links ul {
+    list-style: none;
+}
+
+.navbar .navbar-links ul li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.navbar .navbar-links ul li a {
+    color: #DDDDDD;
+    text-decoration: none;
+}
+
+.navbar .navbar-links ul li a:hover {
+    color: #FFFFFF;
+}
+
+.navbar .navbar-search {
+    margin-left: auto;
+}
+
+.navbar .navbar-search input {
+    border: 0px;
+    padding: 10px;
+}
+
+.navbar .navbar-search .navbar-search-query-box {
+    /**/
+}
+
+.navbar .navbar-search .navbar-search-button {
+    /**/
+}
+
+.movies-section {
+    margin: 2%;
+}
+
+.movies-section .movie-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.movies-section ul li {
+    display: inline-block;
+    margin-bottom: 10%;
+}
