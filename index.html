@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>GMDB</title>
         <link rel="stylesheet" href="./css/styles.css">
+        <script type="text/javascript" src="./index.js"></script>
     </head>
     <body>
         <header class="navbar">
@@ -13,30 +14,62 @@
 
             <section class="navbar-links">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Login</a></li>
+                    <li><a id="navbar-links-home" class="navbar-link active">Home</a></li>
+                    <li><a id="navbar-links-login" class="navbar-link">Login</a></li>
                 </ul>
             </section>
 
             <section class="navbar-search">
                 <form>
-                    <input class="navbar-search-query-box" type="text" placeholder="Search">
-                    <input class="navbar-search-button" type="submit" value="Search">
+                    <input class="simple-textbox" type="text" placeholder="Search">
+                    <input class="simple-button outline orange" type="button" value="Search">
                 </form>
             </section>
         </header>
 
-        <section class="movies-section">
-            <ul class="movie-grid">
-                <li><img src="http://is5.mzstatic.com/image/thumb/Music111/v4/83/fb/73/83fb735f-8779-79ad-b835-4bf3a961177a/source/100000x100000-999.jpg" alt="Guardians of the Galaxy Vol. 2" width="500" height="600"></li>
-                <li><img src="http://is5.mzstatic.com/image/thumb/Music111/v4/83/fb/73/83fb735f-8779-79ad-b835-4bf3a961177a/source/100000x100000-999.jpg" alt="Guardians of the Galaxy Vol. 2" width="500" height="600"></li>
-                <li><img src="http://is5.mzstatic.com/image/thumb/Music111/v4/83/fb/73/83fb735f-8779-79ad-b835-4bf3a961177a/source/100000x100000-999.jpg" alt="Guardians of the Galaxy Vol. 2" width="500" height="600"></li>
-                <li><img src="http://is5.mzstatic.com/image/thumb/Music111/v4/83/fb/73/83fb735f-8779-79ad-b835-4bf3a961177a/source/100000x100000-999.jpg" alt="Guardians of the Galaxy Vol. 2" width="500" height="600"></li>
-                <li><img src="http://is5.mzstatic.com/image/thumb/Music111/v4/83/fb/73/83fb735f-8779-79ad-b835-4bf3a961177a/source/100000x100000-999.jpg" alt="Guardians of the Galaxy Vol. 2" width="500" height="600"></li>
-                <li><img src="http://is5.mzstatic.com/image/thumb/Music111/v4/83/fb/73/83fb735f-8779-79ad-b835-4bf3a961177a/source/100000x100000-999.jpg" alt="Guardians of the Galaxy Vol. 2" width="500" height="600"></li>
-                <li><img src="http://is5.mzstatic.com/image/thumb/Music111/v4/83/fb/73/83fb735f-8779-79ad-b835-4bf3a961177a/source/100000x100000-999.jpg" alt="Guardians of the Galaxy Vol. 2" width="500" height="600"></li>
-                <li><img src="http://is5.mzstatic.com/image/thumb/Music111/v4/83/fb/73/83fb735f-8779-79ad-b835-4bf3a961177a/source/100000x100000-999.jpg" alt="Guardians of the Galaxy Vol. 2" width="500" height="600"></li>
+        <div id="movies-view" class="movies-view active">
+            <ul>
+                <li>
+                    <a id="movie-guards-of-the-galaxy-vol-2" class="movies-movie">
+                        <img src="http://is5.mzstatic.com/image/thumb/Music111/v4/83/fb/73/83fb735f-8779-79ad-b835-4bf3a961177a/source/100000x100000-999.jpg" alt="Guardians of the Galaxy Vol. 2" width="500" height="600">
+                    </a>
+                </li>
+                <li>
+                    <a id="movie-guards-of-the-galaxy-vol-2">
+                        <img src="http://is5.mzstatic.com/image/thumb/Music111/v4/83/fb/73/83fb735f-8779-79ad-b835-4bf3a961177a/source/100000x100000-999.jpg" alt="Guardians of the Galaxy Vol. 2" width="500" height="600">
+                    </a>
+                </li>
+                <li>
+                    <a id="movie-guards-of-the-galaxy-vol-2">
+                        <img src="http://is5.mzstatic.com/image/thumb/Music111/v4/83/fb/73/83fb735f-8779-79ad-b835-4bf3a961177a/source/100000x100000-999.jpg" alt="Guardians of the Galaxy Vol. 2" width="500" height="600">
+                    </a>
+                </li>
+                <li>
+                    <a id="movie-guards-of-the-galaxy-vol-2">
+                        <img src="http://is5.mzstatic.com/image/thumb/Music111/v4/83/fb/73/83fb735f-8779-79ad-b835-4bf3a961177a/source/100000x100000-999.jpg" alt="Guardians of the Galaxy Vol. 2" width="500" height="600">
+                    </a>
+                </li>
+                <li>
+                    <a id="movie-guards-of-the-galaxy-vol-2">
+                        <img src="http://is5.mzstatic.com/image/thumb/Music111/v4/83/fb/73/83fb735f-8779-79ad-b835-4bf3a961177a/source/100000x100000-999.jpg" alt="Guardians of the Galaxy Vol. 2" width="500" height="600">
+                    </a>
+                </li>
+                <li>
+                    <a id="movie-guards-of-the-galaxy-vol-2">
+                        <img src="http://is5.mzstatic.com/image/thumb/Music111/v4/83/fb/73/83fb735f-8779-79ad-b835-4bf3a961177a/source/100000x100000-999.jpg" alt="Guardians of the Galaxy Vol. 2" width="500" height="600">
+                    </a>
+                </li>
             </ul>
-        </section>
+        </div>
+
+        <div id="login-view" class="login-view">
+            <form class="login-form">
+                <label>Email:</label>
+                <input class="simple-textbox" type="text">
+                <label>Password:</label>
+                <input class="simple-textbox" type="password">
+                <input class="simple-button info" type="button" value="Login">
+            </form>
+        </div>
     </body>
 </html>
