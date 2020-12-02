@@ -117,6 +117,7 @@ header {
 
 .movies-view ul li {
     display: inline-block;
+    margin-left: 5%;
     margin-bottom: 10%;
 }
 
@@ -124,7 +125,7 @@ header {
     cursor: pointer;
 }
 
-/* Login Section */
+/* Login View */
 .login-view {
     margin: 2%;
     display: none;
@@ -140,4 +141,69 @@ header {
     justify-content: flex-start;
     align-items: center;
     padding-left: 30px;
+}
+
+/* Info View */
+.info-view {
+    margin: 2%;
+    display: none;
+}
+
+.info-view.active {
+    display: block;
+}
+
+.info-view .info-view-movie {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.info-view .info-view-movie img {
+    display: inline-block;
+}
+
+.info-view .info-view-movie section {
+    display: inline-block;
+    margin-left: 1%;
+}
+
+.info-view .info-view-movie h1 {
+    font-size: 32px;
+    margin-bottom: 1%;
+}
+
+.info-view .info-view-movie h2 {
+    font-size: 24px;
+    margin-bottom: 1%;
+}
+
+.info-view .info-view-movie p {
+    font-size: 24px;
+    margin-bottom: 2%;
+}
+
+.info-view .info-view-movie section ul {
+    list-style: none;
+}
+
+.info-view .info-view-movie section li {
+    display: inline-block;
+}
+
+.info-view .info-view-comment {
+    margin-top: 2%;
+}
+
+.info-view .info-view-comment label {
+    display: block;
+}
+
+.info-view .info-view-comment input {
+    display: block;
+}
+
+.info-view .info-view-comment button {
+    margin-top: 2%;
+    display: block;
 }
