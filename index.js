@@ -100,4 +100,12 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("login-view").setAttribute("class", "login-view active");
         document.getElementById("info-view").setAttribute("class", "info-view");
     });
+
+    document.getElementById("info-view-back-home").addEventListener("click", function() {
+        document.getElementById("navbar-links-home").setAttribute("class", "navbar-link active");
+        document.getElementById("navbar-links-login").setAttribute("class", "navbar-link");
+        document.getElementById("movies-view").setAttribute("class", "movies-view active");
+        document.getElementById("login-view").setAttribute("class", "login-view");
+        document.getElementById("info-view").setAttribute("class", "info-view");
+    });
 });
