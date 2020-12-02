@@ -138,15 +138,26 @@ header {
 }
 
 .login-view.active {
-    display: block;
-}
-
-.login-view .login-form {
+    /* display: block; */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding-left: 30px;
+}
+
+.login-view label {
+    display: block;
+    margin-top: 10%;
+}
+
+.login-view input {
+    display: block;
+    padding: 10px 300px 10px 10px;
+}
+
+.login-view button {
+    display: block;
+    margin-top: 10%;
 }
 
 /* Info View */

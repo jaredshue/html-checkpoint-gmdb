@@ -21,10 +21,6 @@ const database = {
 
         return results;
     },
-
-    append: function(movie) {
-        database.movies.push(movie);
-    }
 };
 
 function displayMovieInformation(movieName) {
